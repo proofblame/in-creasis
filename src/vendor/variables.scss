@@ -1,0 +1,94 @@
+@import './mixins.scss';
+
+$mainFont: 'Candara', sans-serif;
+$secondFont: 'Roboto', sans-serif;
+
+$mainColor: #e5e5e5;
+$secondColor: rgba(229, 229, 229, 0.7);
+
+$linkColor: $secondColor;
+$linkColorActive: $mainColor;
+
+$background: #0e044b;
+
+$boxShadow: 0px 10px 100px #070033;
+
+$_425: 424.98px;
+$_768: 767.98px;
+$_1024: 1023.98px;
+
+%fonts {
+  font-family: $mainFont;
+  font-style: normal;
+}
+
+%fz-logo {
+  @include adaptive(font-size, 30, 24);
+  @include adaptive(line-height, 37, 29);
+}
+
+// H1
+%fz-72-36 {
+  @include adaptive(font-size, 72, 36);
+  @include adaptive(line-height, 76, 38);
+}
+
+%fz-72 {
+  @include adaptive(font-size, 72, 24);
+  @include adaptive(line-height, 76, 25);
+}
+
+%fz-30 {
+  @include adaptive(font-size, 30, 12);
+  @include adaptive(line-height, 31, 13);
+}
+
+%fz-30-14 {
+  @include adaptive(font-size, 30, 14);
+  @include adaptive(line-height, 31, 15);
+}
+
+%fz-24 {
+  @include adaptive(font-size, 24, 12);
+  @include adaptive(line-height, 29, 15);
+}
+
+%fz-24-12 {
+  @include adaptive(font-size, 24, 12);
+  @include adaptive(line-height, 25, 13);
+}
+
+%fz-48-24 {
+  @include adaptive(font-size, 48, 24);
+  @include adaptive(line-height, 50, 25);
+}
+
+%fz-48-30 {
+  @include adaptive(font-size, 48, 30);
+  @include adaptive(line-height, 50, 31);
+}
+
+%fz-48-30 {
+  @include adaptive(font-size, 36, 20);
+  @include adaptive(line-height, 38, 21);
+}
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Шаблоный брейкпоинтов
+
+//  768px
+// @media screen and (max-width: $_768) {}
+// @media screen and (max-width: $_425) {}
+
+%bounce-1 {
+  animation-name: bounce-1;
+}
+
+%bounce-2 {
+  animation-name: bounce-2;
+}
