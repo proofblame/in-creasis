@@ -3,27 +3,33 @@
 .nav {
   @media screen and (max-width: $_1024) {
     position: fixed;
-    top: -100%;
+    top: 0;
     left: 0;
     right: 0;
     height: 100%;
     bottom: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     background-color: $background;
-    row-gap: 100px;
+    row-gap: 10px;
     transition: all 0.5s ease-in-out;
+    @include adaptive(padding-top, 100, 90);
+    padding-bottom: 32px;
+    transform: translateY(-100%);
   }
 }
 .list {
+  width: 100%;
   @extend %flex;
+  align-items: stretch;
   @include adaptive(column-gap, 40, 0);
   row-gap: 20px;
   @media screen and (max-width: $_1024) {
     flex-direction: column;
     align-items: center;
+    overflow-y: auto;
   }
 }
 .button {
@@ -32,8 +38,10 @@
   }
 }
 .active {
+  z-index: -1;
   @media screen and (max-width: $_1024) {
-    top: 0;
+    transform: translateY(0);
     overflow-y: auto;
+    // @include adaptive(padding-top, 109, 92);
   }
 }
