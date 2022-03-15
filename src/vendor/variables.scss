@@ -13,7 +13,10 @@ $background: #0e044b;
 
 $boxShadow: 0px 10px 100px #070033;
 
+$letterSpacing: 0.05em;
+
 $_425: 424.98px;
+$_576: 575.98px;
 $_768: 767.98px;
 $_1024: 1023.98px;
 
@@ -82,7 +85,9 @@ $_1024: 1023.98px;
 // Шаблоный брейкпоинтов
 
 //  768px
+// @media screen and (max-width: $_1024) {}
 // @media screen and (max-width: $_768) {}
+// @media screen and (max-width: $_576) {}
 // @media screen and (max-width: $_425) {}
 
 %bounce-1 {

@@ -1,0 +1,25 @@
+@import '../../vendor/variables.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0px 10px 100px #070033;
+}
+
+.wrapper {
+  @extend %flex;
+  column-gap: 10px;
+  background-color: $background;
+  @include adaptivePadding(padding, 22, 34, 17, 17);
+  max-width: 1488px;
+  margin: 0 auto;
+}
+
+.button {
+  @media screen and (max-width: $_1024) {
+    display: none;
+  }
+}

@@ -5,7 +5,5 @@
   height: 100%;
   max-width: $maxWidth + px;
   margin: 0 auto;
-  @media screen and (max-width: ($breakPoint + px)) {
-    @include adaptivePadding(padding, 0, 34, 0, 18);
-  }
+  @include adaptivePadding(padding, 0, 34, 0, 18);
 }

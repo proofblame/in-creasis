@@ -1,0 +1,17 @@
+@import '../../vendor/variables.scss';
+
+.link {
+  color: $mainColor;
+  font-family: $mainFont;
+  font-weight: 700;
+  letter-spacing: $letterSpacing;
+  @include adaptive(font-size, 30, 24);
+  @include adaptive(line-height, 37, 29);
+  z-index: 1;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 1;
+  }
+}

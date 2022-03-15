@@ -1,6 +1,6 @@
 import style from './button.module.scss'
 
-const Button = ({ text, icon }) => {
+const Button = ({ text, icon, className, onClick }) => {
 
   const iconClass = (icon) => {
     switch (icon) {
@@ -12,10 +12,10 @@ const Button = ({ text, icon }) => {
         return '';
     }
   }
-  const className = `${style.button} ${iconClass(icon)}`
+  const classNames = `${style.button} ${iconClass(icon)} ${className}`
 
   return (
-    <button className={className}>{text}</button>
+    <button className={classNames} onClick={onClick}>{text}</button>
   )
 }
 

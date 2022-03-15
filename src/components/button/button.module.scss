@@ -8,8 +8,10 @@ $secondHoverColor: #130d46;
 %common {
   background-color: $secondColor;
   position: relative;
-  padding-right: 28px;
-  padding-left: 80px;
+  @include adaptive(padding-left, 80, 36);
+  @include adaptive(padding-right, 27, 12);
+  @include adaptive(padding-top, 22, 10);
+  @include adaptive(padding-bottom, 22, 10);
 }
 %commonHover {
   filter: drop-shadow(0px 20px 100px rgba(13, 4, 77, 0.58));
@@ -22,10 +24,10 @@ $secondHoverColor: #130d46;
   content: '';
   position: absolute;
   top: 50%;
-  left: 28px;
   transform: translateY(-50%);
-  @include adaptive(width, 32, 32);
-  @include adaptive(height, 32, 32);
+  @include adaptive(width, 32, 20);
+  @include adaptive(height, 32, 20);
+  @include adaptive(left, 28, 11);
 
   background-repeat: no-repeat;
   background-size: contain;
@@ -43,6 +45,8 @@ $secondHoverColor: #130d46;
   padding: 18px 46px;
   @include adaptivePadding(padding, 18, 46, 14, 31);
   @include adaptive(border-radius, 10, 4);
+  white-space: nowrap;
+  text-overflow: ellipsis;
   &:hover {
     background-color: $bgHoverColor;
     box-shadow: 0px 20px 100px rgba(13, 4, 77, 0.58);

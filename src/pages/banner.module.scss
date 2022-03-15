@@ -1,0 +1,82 @@
+@import '../vendor/variables.scss';
+
+.banner {
+  background-image: url('../images/banner-bg.svg'), linear-gradient(180deg, #0f054c 0%, #006dff 100%);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include adaptive(padding-top, 109, 92);
+  height: 100vh;
+  overflow-x: hidden;
+  @extend %fonts;
+  font-weight: 700;
+  letter-spacing: $letterSpacing;
+  @extend %flex;
+  flex-direction: column;
+}
+.container {
+  height: 100%;
+  @extend %flex;
+  align-items: center;
+  @media screen and (max-width: $_768) {
+    row-gap: 40px;
+    flex-wrap: wrap;
+  }
+  @include adaptive(column-gap, 76, 0);
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/banner-ball.svg');
+    @include adaptive(width, 451, 451 / 2);
+    @include adaptive(height, 451, 451 / 2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 50px;
+    left: calc(-451px / 2);
+    z-index: -1;
+  }
+}
+.content {
+  @media screen and (max-width: $_768) {
+    align-self: flex-end;
+  }
+}
+
+.slogan {
+  color: $secondColor;
+  @extend %fz-30;
+  @include adaptive(margin-bottom, 43, 31);
+}
+.title {
+  @extend %fz-72-36;
+  color: $mainColor;
+  @include adaptive(margin-bottom, 49, 13);
+}
+.subtitle {
+  color: $mainColor;
+  @extend %fz-30;
+  @include adaptive(margin-bottom, 64, 30);
+}
+.buttons {
+  @extend %flex;
+  justify-content: flex-start;
+  @include adaptive(column-gap, 20, 10);
+}
+.imgWrapper {
+  position: relative;
+  @media screen and (max-width: $_768) {
+    align-self: flex-start;
+  }
+}
+.img {
+  display: block;
+  // position: absolute;
+  // top: 50%;
+  // right: -97px;
+  // transform: translateY(-50%);
+  // @include adaptive(width, 845, 286);
+  // @include adaptive(height, 642, 217);
+}
