@@ -1,0 +1,100 @@
+@import '../../../vendor/variables.scss';
+
+.getProfit {
+  background-color: $background;
+  background-image: url('./images/get-profit-bg.svg');
+  background-position: center 101%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include adaptive(padding-top, 230, 55);
+  @include adaptive(padding-bottom, 100, 50);
+  @extend %fonts;
+  font-weight: 700;
+  letter-spacing: $letterSpacing;
+  @extend %flex;
+  flex-direction: column;
+}
+.container {
+  @extend %flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: $_768) {
+    flex-wrap: wrap;
+  }
+}
+.content {
+  @media screen and (max-width: $_768) {
+    align-self: flex-end;
+  }
+}
+
+.slogan {
+  @extend %slogan;
+}
+.title {
+  @extend %title;
+}
+.subtitle {
+  @extend %subtitle;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(286px, 1fr));
+  @include adaptive(column-gap, 60, 0);
+  row-gap: 18px;
+  @media screen and (max-width: $_768) {
+    grid-template-columns: repeat(1, minmax(286px, 1fr));
+  }
+}
+.item {
+  position: relative;
+  @include adaptive(padding-left, 120, 48);
+  &::before {
+    content: '';
+    position: absolute;
+    @include adaptive(width, 100, 40);
+    @include adaptive(height, 100, 40);
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &:nth-child(1)::before {
+    background-image: url('./images/quick-start-icon.svg');
+  }
+  &:nth-child(2)::before {
+    background-image: url('./images/profit-icon.svg');
+  }
+  &:nth-child(3)::before {
+    background-image: url('./images/comfortable-ui-icon.svg');
+  }
+  &:nth-child(4)::before {
+    background-image: url('./images/support-icon.svg');
+  }
+}
+.itemTitle {
+  @extend %fz-30-14;
+  color: $mainColor;
+  @include adaptive(margin-bottom, 13, 6);
+}
+.caption {
+  @extend %fz-24-12;
+  color: $secondColor;
+}
+.imgWrapper {
+  @media screen and (max-width: $_768) {
+    align-self: flex-start;
+  }
+}
+.img {
+  display: block;
+  // position: absolute;
+  // top: 50%;
+  // right: -97px;
+  // transform: translateY(-50%);
+  // @include adaptive(width, 845, 286);
+  // @include adaptive(height, 642, 217);
+}

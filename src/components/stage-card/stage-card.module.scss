@@ -1,0 +1,28 @@
+@import '../../vendor/variables.scss';
+
+.stageCard {
+  @extend %flex;
+  flex-direction: column;
+  align-items: flex-start;
+  letter-spacing: $letterSpacing;
+  width: 100%;
+}
+.reverse {
+  flex-direction: column-reverse;
+  @media screen and (max-width: 667px) {
+    flex-direction: column;
+  }
+}
+.title {
+  color: $mainColor;
+  @extend %fz-30-14;
+  @include adaptive(margin-bottom, 20, 10);
+}
+.img {
+  @include adaptive(margin-bottom, 34, 0);
+}
+.caption {
+  color: $secondColor;
+  @extend %fz-24-12;
+  @include adaptive(margin-bottom, 33, 30);
+}

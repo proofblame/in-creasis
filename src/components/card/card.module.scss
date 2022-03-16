@@ -1,0 +1,37 @@
+@import '../../vendor/variables.scss';
+
+.card {
+  background: linear-gradient(204.95deg, #23147d 1.62%, #5948bb 51.84%, #23147d 100%);
+  box-shadow: 20px 20px 100px rgba(4, 1, 26, 0.5), -20px -20px 100px rgba(4, 1, 26, 0.5);
+  border-radius: 20px;
+  @include adaptive(padding-top, 52, 35);
+  @include adaptive(padding-bottom, 60, 28);
+  @include adaptive(padding-right, 50, 36);
+  @include adaptive(padding-left, 50, 36);
+  @extend %flex;
+  flex-direction: column;
+  align-items: flex-start;
+  letter-spacing: $letterSpacing;
+  width: 100%;
+}
+.title {
+  color: $mainColor;
+  @extend %fz-48-24;
+  @include adaptive(margin-bottom, 27, 18);
+}
+.subtitle {
+  color: $secondColor;
+  @extend %fz-48-30;
+  @include adaptive(margin-bottom, 23, 0);
+}
+.img {
+  align-self: flex-end;
+  @include adaptive(width, 200, 150);
+  @include adaptive(height, 200, 150);
+  @include adaptive(margin-bottom, 34, 0);
+}
+.caption {
+  color: $secondColor;
+  @extend %fz-36-20;
+  @include adaptive(margin-bottom, 33, 30);
+}

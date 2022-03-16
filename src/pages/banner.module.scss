@@ -2,10 +2,11 @@
 
 .banner {
   background-image: url('../images/banner-bg.svg'), linear-gradient(180deg, #0f054c 0%, #006dff 100%);
-  background-position: center bottom;
+  background-position: center 101%;
   background-repeat: no-repeat;
   background-size: contain;
   @include adaptive(padding-top, 109, 92);
+  @include adaptive(padding-bottom, 100, 45);
   height: 100vh;
   overflow-x: hidden;
   @extend %fonts;

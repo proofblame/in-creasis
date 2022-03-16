@@ -19,6 +19,7 @@ $_425: 424.98px;
 $_576: 575.98px;
 $_768: 767.98px;
 $_1024: 1023.98px;
+$_1440: 1439.98px;
 
 %fonts {
   font-family: $mainFont;
@@ -71,7 +72,7 @@ $_1024: 1023.98px;
   @include adaptive(line-height, 50, 31);
 }
 
-%fz-48-30 {
+%fz-36-20 {
   @include adaptive(font-size, 36, 20);
   @include adaptive(line-height, 38, 21);
 }
@@ -82,9 +83,25 @@ $_1024: 1023.98px;
   align-items: center;
 }
 
+%slogan {
+  color: $secondColor;
+  @extend %fz-30;
+  @include adaptive(margin-bottom, 30, 12);
+}
+%title {
+  @extend %fz-72;
+  color: $mainColor;
+  @include adaptive(margin-bottom, 30, 13);
+}
+%subtitle {
+  color: $mainColor;
+  @extend %fz-24;
+  @include adaptive(margin-bottom, 59, 23);
+}
+
 // Шаблоный брейкпоинтов
 
-//  768px
+// @media screen and (max-width: $_1440) {}
 // @media screen and (max-width: $_1024) {}
 // @media screen and (max-width: $_768) {}
 // @media screen and (max-width: $_576) {}
