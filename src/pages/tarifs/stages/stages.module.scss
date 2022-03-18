@@ -1,0 +1,106 @@
+@import '../../../vendor/variables.scss';
+
+.stages {
+  // background-image: url('./images/stages-bg.svg');
+  background-color: $background;
+  background-position: center 105%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  // @include adaptive(padding-top, 230, 55);
+  @include adaptive(padding-bottom, 100, 50);
+  @extend %fonts;
+  font-weight: 700;
+  letter-spacing: $letterSpacing;
+}
+.container {
+  @extend %flex;
+  align-items: center;
+  margin-bottom: 40px;
+  column-gap: 10px;
+  row-gap: 40px;
+  @include adaptive(margin-bottom, 59, 40);
+  @media screen and (max-width: $_768) {
+    flex-wrap: wrap;
+  }
+}
+.content {
+  max-width: 720px;
+  @media screen and (max-width: $_768) {
+    align-self: flex-end;
+  }
+}
+
+.slogan {
+  @extend %slogan;
+}
+.title {
+  @extend %title;
+}
+.subtitle {
+  @extend %subtitle;
+}
+.list {
+  @extend %flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @include adaptive(column-gap, 60, 0);
+  @include adaptive(row-gap, 18, 8);
+}
+.item {
+  position: relative;
+  @include adaptive(padding-left, 33, 13);
+  @extend %fz-24-12;
+  color: $secondColor;
+
+  &::before {
+    content: '';
+    position: absolute;
+    @include adaptive(width, 20, 8);
+    @include adaptive(height, 20, 8);
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0339a8;
+    border-radius: 50%;
+    @include adaptive(border-width, 3, 2);
+    border-style: solid;
+    border-color: $background;
+  }
+}
+.itemTitle {
+  @extend %fz-30-14;
+  color: $mainColor;
+  @include adaptive(margin-bottom, 13, 6);
+}
+
+.imgWrapper {
+  @media screen and (max-width: $_768) {
+    align-self: flex-start;
+  }
+}
+.img {
+  display: block;
+}
+.cards {
+  width: 100%;
+  @extend %flex;
+  @include adaptive(column-gap, 45, 0);
+  @media screen and (max-width: $_768) {
+    flex-direction: column;
+    row-gap: 45px;
+  }
+}
+.arrow {
+  @include adaptive(width, 200, 150);
+  @include adaptive(height, 200, 150);
+  @media screen and (max-width: $_1440) {
+    display: none;
+  }
+}
+.reverseArrow {
+  @extend .arrow;
+  transform: rotate(67.79deg);
+}

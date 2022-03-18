@@ -1,0 +1,60 @@
+@import '../../../vendor/variables.scss';
+
+.aboutNft {
+  background-image: url('./images/about-nft-bg.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include adaptive(padding-top, 230, 55);
+  @include adaptive(padding-bottom, 100, 50);
+  @extend %fonts;
+  font-weight: 700;
+  letter-spacing: $letterSpacing;
+  @extend %flex;
+  flex-direction: column;
+}
+.container {
+  @extend %flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  @include adaptive(margin-bottom, 88, 40);
+
+  @include adaptive(column-gap, 84, 0);
+  row-gap: 40px;
+
+  @media screen and (max-width: $_768) {
+    flex-wrap: wrap;
+  }
+}
+.content {
+  max-width: 700px;
+  @media screen and (max-width: $_768) {
+    align-self: flex-end;
+  }
+}
+
+.slogan {
+  @extend %slogan;
+}
+.title {
+  @extend %title;
+}
+.subtitle {
+  @extend %subtitle;
+}
+
+.itemTitle {
+  @extend %fz-30-14;
+  color: $mainColor;
+  @include adaptive(margin-bottom, 13, 6);
+}
+
+.imgWrapper {
+  @media screen and (max-width: $_768) {
+    align-self: flex-start;
+  }
+}
+.img {
+  width: 100%;
+  display: block;
+}

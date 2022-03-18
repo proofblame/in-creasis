@@ -1,0 +1,75 @@
+@import '../../../vendor/variables.scss';
+
+.paySystems {
+  background: $background;
+  box-shadow: 20px 20px 100px rgba(6, 1, 36, 0.51);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  @include adaptivePadding(padding, 64, 0, 23, 0);
+}
+.wrapper {
+  @extend %flex;
+  row-gap: 20px;
+  column-gap: 10px;
+  @extend %fonts;
+  font-weight: 700;
+  letter-spacing: $letterSpacing;
+  color: $mainColor;
+  @media screen and (max-width: $_1024) {
+    flex-wrap: wrap;
+  }
+}
+.caption {
+  @extend %fz-30;
+}
+.list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
+  justify-content: end;
+  @include adaptive(column-gap, 20, 10);
+  @include adaptive(row-gap, 20, 10);
+  @media screen and (max-width: $_576) {
+    grid-template-columns: repeat(2, minmax(124px, 1fr));
+  }
+}
+.item {
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 0 100%;
+  align-items: center;
+  justify-content: center;
+  @include adaptive(column-gap, 10, 6);
+  text-align: center;
+  background: #342a85;
+  @include adaptivePadding(padding, 20, 22, 10, 12);
+  @include adaptive(border-radius, 10, 4);
+  @extend %fz-24;
+  @media screen and (max-width: $_576) {
+    justify-content: space-around;
+  }
+  &::before {
+    flex: 0 0 auto;
+    content: '';
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &:nth-child(1)::before {
+    background-image: url('../../../images/qiwi-icon.svg');
+  }
+  &:nth-child(2)::before {
+    background-image: url('../../../images/bitcoin-icon.svg');
+  }
+  &:nth-child(3)::before {
+    background-image: url('../../../images/etherium-icon.svg');
+  }
+  &:nth-child(4)::before {
+    background-image: url('../../../images/litecoin-icon.svg');
+  }
+}

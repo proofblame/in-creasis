@@ -9,7 +9,7 @@
 }
 .reverse {
   flex-direction: column-reverse;
-  @media screen and (max-width: 667px) {
+  @media screen and (max-width: $_768) {
     flex-direction: column;
   }
 }
@@ -20,6 +20,7 @@
 }
 .img {
   @include adaptive(margin-bottom, 34, 0);
+  max-width: 455px;
 }
 .caption {
   color: $secondColor;

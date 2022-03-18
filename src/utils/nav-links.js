@@ -4,12 +4,12 @@ export const navLinks = [
     id: 'banner'
   },
   {
-    name: 'О компании',
-    id: 'about'
-  },
-  {
     name: 'Тарифы',
     id: 'tarifs'
+  },
+  {
+    name: 'О компании',
+    id: 'about'
   },
   {
     name: 'Вопросы',

@@ -1,0 +1,80 @@
+@import '../../vendor/variables.scss';
+
+.footer {
+  background-image: url('./images/contacts-bg.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include adaptive(padding-top, 230, 55);
+  @include adaptive(padding-bottom, 140, 50);
+  @extend %fonts;
+  letter-spacing: $letterSpacing;
+}
+
+.wrapper {
+  column-gap: 10px;
+  // background-color: $background;
+  @include adaptivePadding(padding, 22, 34, 17, 17);
+  max-width: 1488px;
+  margin: 0 auto;
+  @extend %flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+  @media screen and (max-width: $_768) {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+
+.button {
+  @media screen and (max-width: $_1024) {
+    display: none;
+  }
+}
+
+.slogan {
+  @extend %slogan;
+}
+.title {
+  @extend %title;
+}
+.subtitle {
+  @extend %subtitle;
+}
+.buttons {
+  @extend %flex;
+  justify-content: flex-start;
+  @include adaptive(column-gap, 20, 10);
+}
+.list {
+  @extend %fonts;
+  @extend %fz-24-14;
+  font-weight: 700;
+  color: $linkColor;
+  @extend %flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 28px;
+}
+.group {
+  color: $secondColor;
+  @extend %fz-24-12;
+}
+.link {
+  color: inherit;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+.active {
+  color: $linkColorActive;
+}
+.privacy {
+  @include adaptive(padding-top, 18, 12);
+}

@@ -61,6 +61,10 @@ $_1440: 1439.98px;
   @include adaptive(font-size, 24, 12);
   @include adaptive(line-height, 25, 13);
 }
+%fz-24-14 {
+  @include adaptive(font-size, 24, 14);
+  @include adaptive(line-height, 29, 17);
+}
 
 %fz-48-24 {
   @include adaptive(font-size, 48, 24);
