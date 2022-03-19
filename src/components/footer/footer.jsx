@@ -14,8 +14,8 @@ const Footer = () => {
           <h2 className={style.title}>{footer.title}</h2>
           <p className={style.subtitle}>{footer.subtitle}</p>
           <div className={style.buttons}>
-            <Button icon={'register'} text={'регистрация'} />
-            <Button icon={'chat'} text={'чат в телеграмм'} />
+            <Button icon={'telegram'} text={'Telegram'} />
+            <Button icon={'whatsapp'} text={'WhatsApp'} />
           </div>
         </div>
         <nav className={style.nav}>

@@ -1,18 +1,21 @@
 import style from './button.module.scss'
 
-const Button = ({ text, icon, className, onClick }) => {
+const Button = ({ text, icon, className, onClick, color }) => {
 
   const iconClass = (icon) => {
-    switch (icon) {
-      case 'register':
-        return style.register
-      case 'chat':
-        return style.chat
-      default:
-        return '';
-    }
+    return style[`${icon}`]
+    // register
+    // chat
+    // telegram
+    // whatsapp
   }
-  const classNames = `${style.button} ${iconClass(icon)} ${className}`
+
+  const colorClass = (color) => {
+    return style[`${color}`]
+    // dark
+  }
+
+  const classNames = `${style.button} ${iconClass(icon)} ${colorClass(color)} ${className}`
 
   return (
     <button className={classNames} onClick={onClick}>{text}</button>

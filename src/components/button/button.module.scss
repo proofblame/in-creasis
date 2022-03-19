@@ -12,26 +12,26 @@ $secondHoverColor: #130d46;
   @include adaptive(padding-right, 27, 12);
   @include adaptive(padding-top, 22, 10);
   @include adaptive(padding-bottom, 22, 10);
-}
-%commonHover {
-  filter: drop-shadow(0px 20px 100px rgba(13, 4, 77, 0.58));
-  background-color: $secondHoverColor;
-}
-%commonActive {
-  background-color: $secondColor;
-}
-%commonBefore {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  @include adaptive(width, 32, 20);
-  @include adaptive(height, 32, 20);
-  @include adaptive(left, 28, 11);
+  &:hover {
+    filter: drop-shadow(0px 20px 100px rgba(13, 4, 77, 0.58));
+    background-color: $secondHoverColor;
+  }
+  &:active {
+    background-color: $secondColor;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include adaptive(width, 32, 20);
+    @include adaptive(height, 32, 20);
+    @include adaptive(left, 28, 11);
 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 .button {
@@ -54,32 +54,40 @@ $secondHoverColor: #130d46;
   &:active {
     background-color: $bgColor;
   }
-}
 
-.button.register {
-  @extend %common;
-  &:hover {
-    @extend %commonHover;
+  &.dark {
+    background-color: $secondColor;
+    &:hover {
+      background-color: $secondHoverColor;
+    }
+    &:active {
+      background-color: $secondColor;
+    }
   }
-  &:active {
-    @extend %commonActive;
-  }
-  &::before {
-    @extend %commonBefore;
-    background-image: url('./images/register-icon.svg');
-  }
-}
 
-.button.chat {
-  @extend %common;
-  &:hover {
-    @extend %commonHover;
+  &.register {
+    @extend %common;
+    &::before {
+      background-image: url('./images/register-icon.svg');
+    }
   }
-  &:active {
-    @extend %commonActive;
+  &.chat {
+    @extend %common;
+    &::before {
+      background-image: url('./images/chat-icon.svg');
+    }
   }
-  &::before {
-    @extend %commonBefore;
-    background-image: url('./images/chat-icon.svg');
+  &.telegram {
+    @extend %common;
+    &::before {
+      background-image: url('./images/telegram-icon.svg');
+    }
+  }
+  &.whatsapp {
+    @extend %common;
+
+    &::before {
+      background-image: url('./images/whatsapp-icon.svg');
+    }
   }
 }

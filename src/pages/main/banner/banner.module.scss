@@ -2,7 +2,7 @@
 
 .banner {
   background-image: url('./images/banner-bg.svg'), linear-gradient(180deg, #0f054c 0%, #006dff 100%);
-  background-position: center 101%;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: contain;
   @include adaptive(padding-top, 109, 92);

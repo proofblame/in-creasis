@@ -2,7 +2,7 @@
 
 .footer {
   background-image: url('./images/contacts-bg.svg');
-  background-position: center bottom;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   @include adaptive(padding-top, 230, 55);

@@ -11,7 +11,7 @@ const Header = () => {
       <div className={style.wrapper}>
         <Logo />
         <Nav />
-        <Button text={'регистрация'} className={style.button} />
+        <Button text={'Регистрация'} className={style.button} />
         <MenuButton />
       </div>
     </header>
