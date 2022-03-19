@@ -42,6 +42,7 @@
 .item {
   @extend %fz-24-12;
   color: $secondColor;
+  @include adaptive(margin-bottom, 50, 20);
 }
 .itemTitle {
   @extend %fz-30-14;
@@ -76,6 +77,9 @@
   &:last-child {
     margin-bottom: 0;
   }
+  &.active {
+    color: $mainColor;
+  }
 }
 .questions {
   width: 100%;
@@ -106,6 +110,16 @@
     background-size: contain;
     top: 50%;
     transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+    transform: rotate(90deg);
+  }
+  &.active {
+    color: $mainColor;
+    &::before {
+      transform: rotate(0deg);
+      transition: all 0.3s ease-in-out;
+      background-image: url('./images/minus-icon.svg');
+    }
   }
 }
 .table {
@@ -121,9 +135,23 @@
   @include adaptive(border-radius, 10, 5);
   @include adaptivePadding(padding, 40, 40, 10, 13);
   @include adaptive(margin-bottom, 40, 10);
-  box-sizing: border-box;
-  display: none;
-  &.active {
-    display: block;
-  }
+}
+
+.Enter {
+  opacity: 0;
+  transform: scale(0.9) translateY(-50%);
+}
+.EnterActive {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.Exit {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+.ExitActive {
+  opacity: 0;
+  transform: scale(0.9) translateY(-50%);
+  transition: opacity 300ms, transform 300ms;
 }

@@ -3,10 +3,13 @@ import { constants } from '../../utils/constants'
 import Button from '../button/button'
 import style from './footer.module.scss'
 import { navLinks as links } from '../../utils/nav-links'
+import { useLocation } from 'react-router-dom'
 
 const Footer = () => {
   const { footer } = constants
+  const { pathname } = useLocation()
   return (
+    pathname === '/' &&
     <footer className={style.footer} id={'contacts'}>
       <div className={style.wrapper}>
         <div className={style.content}>

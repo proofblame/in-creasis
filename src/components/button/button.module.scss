@@ -41,6 +41,7 @@ $secondHoverColor: #130d46;
   @extend %fonts;
   @extend %fz-24;
   font-weight: 700;
+  letter-spacing: $letterSpacing;
   cursor: pointer;
   padding: 18px 46px;
   @include adaptivePadding(padding, 18, 46, 14, 31);

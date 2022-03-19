@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Switch } from 'react-router-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Main } from '../../pages'
+import NotFound from '../../pages/not-found/not-found'
 import Footer from '../footer/footer'
 import Header from '../header/header'
 
@@ -18,7 +19,8 @@ const App = () => {
     <Router>
       <Header />
       <Switch>
-        <Route exact patch='/' component={Main} />
+        <Route exact path='/' component={Main} />
+        <Route path='*' component={NotFound} />
       </Switch>
       <Footer />
     </Router>

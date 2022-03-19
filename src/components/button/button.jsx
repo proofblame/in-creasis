@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import style from './button.module.scss'
 
-const Button = ({ text, icon, className, onClick, color }) => {
+const Button = ({ text, icon, className, onClick, color, to }) => {
 
   const iconClass = (icon) => {
     return style[`${icon}`]
@@ -18,7 +19,15 @@ const Button = ({ text, icon, className, onClick, color }) => {
   const classNames = `${style.button} ${iconClass(icon)} ${colorClass(color)} ${className}`
 
   return (
-    <button className={classNames} onClick={onClick}>{text}</button>
+    to ?
+      <Link
+        className={classNames}
+        to={to}
+      >
+        {text}
+      </Link>
+      :
+      <button className={classNames} onClick={onClick}>{text}</button>
   )
 }
 
