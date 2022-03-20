@@ -127,6 +127,9 @@
   width: 100%;
   @include adaptive(column-gap, 50, 0);
   row-gap: 30px;
+  @media screen and (max-width: $_1024) {
+    flex-wrap: wrap;
+  }
 }
 .answer {
   background: #342a85;
