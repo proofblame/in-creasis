@@ -54,13 +54,15 @@ export const Faq = () => {
             <h2 className={style.title}>{faq.title}</h2>
           </div>
           <div className={style.table}>
-            <ul className={style.topics}>
-              {
-                faqList.map((theme, index) => (
-                  <li className={`${style.theme} ${active.theme === index && style.active}`} key={index} onClick={() => handleClickTheme(index)}>{theme.title}</li>
-                ))
-              }
-            </ul>
+            <div className={style.topicsWrapper}>
+              <ul className={style.topics}>
+                {
+                  faqList.map((theme, index) => (
+                    <li className={`${style.theme} ${active.theme === index && style.active}`} key={index} onClick={() => handleClickTheme(index)}>{theme.title}</li>
+                  ))
+                }
+              </ul>
+            </div>
             <ul className={style.questions}>
               {
                 faqList.map((theme, index) => (
@@ -100,12 +102,7 @@ export const Faq = () => {
                             </p>
                           </CSSTransition>
                         }
-
-
-
-
                       </li>
-
                     ))
                   )
                 ))

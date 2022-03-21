@@ -8,10 +8,11 @@ export const constants = {
   },
   about: {
     caption: 'Мы работаем с платёжными системами',
-    qiwi: 'QIWI',
     bitcoin: 'BITCOIN',
     etherium: 'ETHERIUM',
     litecoin: 'LITECOIN',
+    payeer: 'PAYEER',
+    usdt: 'USDT'
   },
   getProfit: {
     slogan: 'Получай ежедневную прибыль',

@@ -15,8 +15,12 @@ const Button = ({ text, icon, className, onClick, color, to }) => {
     return style[`${color}`]
     // dark
   }
+  const bgColorClass = (className) => {
+    return style[`${className}`]
+    // dark
+  }
 
-  const classNames = `${style.button} ${iconClass(icon)} ${colorClass(color)} ${className}`
+  const classNames = `${style.button} ${iconClass(icon)} ${colorClass(color)} ${bgColorClass(className)} ${className}`
 
   return (
     to ?

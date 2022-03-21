@@ -13,6 +13,8 @@
   align-items: flex-start;
   letter-spacing: $letterSpacing;
   width: 100%;
+  border: 3px solid;
+  border-color: transparent;
 }
 .title {
   color: $mainColor;
@@ -34,4 +36,13 @@
   color: $secondColor;
   @extend %fz-36-20;
   @include adaptive(margin-bottom, 33, 30);
+}
+.border1 {
+  border-image-source: linear-gradient(204.44deg, #316ede 0.91%, #91b7ff 49.26%, #316ede 98.63%);
+}
+.border2 {
+  border-image-source: linear-gradient(206.12deg, #08bcd8 0%, #f0fdff 50.52%, #08bcd8 100%);
+}
+.border3 {
+  border-image-source: linear-gradient(206.12deg, #5ea1ff 0%, #71e7ff 52.08%, #d95bff 100%);
 }

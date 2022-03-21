@@ -22,6 +22,8 @@ export const Tarifs = () => {
             title={'Бомж'}
             percent={'10%'}
             img={bumImg}
+            border={'border1'}
+            btnClass={'card1'}
           >
             От 10$ <br />
             до 2000$
@@ -30,6 +32,8 @@ export const Tarifs = () => {
             title={'Клерк'}
             percent={'15%'}
             img={clerkImg}
+            border={'border2'}
+            btnClass={'card2'}
           >
             От 2000$ <br />
             до 5000$
@@ -38,6 +42,8 @@ export const Tarifs = () => {
             title={'Олигатор'}
             percent={'10000%'}
             img={alligatorImg}
+            border={'border3'}
+            btnClass={'card3'}
           >
             От 5000$ <br />
             до 5000000$

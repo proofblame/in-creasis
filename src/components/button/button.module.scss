@@ -91,4 +91,22 @@ $secondHoverColor: #130d46;
       background-image: url('./images/whatsapp-icon.svg');
     }
   }
+  &.card1 {
+    background: #316ede;
+    &:active {
+      box-shadow: none;
+    }
+  }
+  &.card2 {
+    background: linear-gradient(267.58deg, #2e72e0 0%, #48bfd2 48.44%, #2e72e0 100%);
+    &:active {
+      box-shadow: none;
+    }
+  }
+  &.card3 {
+    background: linear-gradient(267.58deg, #df36ff 0%, #00a0be 49.48%, #0065ff 100%);
+    &:active {
+      box-shadow: none;
+    }
+  }
 }

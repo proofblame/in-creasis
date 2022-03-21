@@ -8,10 +8,11 @@ const PaySystems = () => {
   return (
     <section className={style.paySystems}>
       <Wrapper>
+        <p className={style.caption}>{about.caption}</p>
         <div className={style.wrapper}>
-          <p className={style.caption}>{about.caption}</p>
           <ul className={style.list}>
-            <li className={style.item}>{about.qiwi}</li>
+            <li className={style.item}>{about.usdt}</li>
+            <li className={style.item}>{about.payeer}</li>
             <li className={style.item}>{about.bitcoin}</li>
             <li className={style.item}>{about.etherium}</li>
             <li className={style.item}>{about.litecoin}</li>
