@@ -95,7 +95,7 @@ export const Faq = () => {
                             nodeRef={nodeRef}
                           >
 
-                            <p className={style.answer} ref={nodeRef}>
+                            <p className={style.answer} ref={nodeRef} >
                               {
                                 question.answer
                               }

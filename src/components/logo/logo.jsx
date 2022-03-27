@@ -3,6 +3,7 @@ import style from './logo.module.scss'
 import { useDispatch } from 'react-redux'
 import { closeMenu } from '../../services/actions/navbar'
 import { Link } from 'react-scroll'
+import img from './images/logo.svg'
 
 const Logo = () => {
   const dispatch = useDispatch()
@@ -17,7 +18,7 @@ const Logo = () => {
       duration={1000}
 
     >
-      InCreasis
+      <img src={img} alt="Logo InCreasis" />
     </Link >
   )
 }

@@ -3,7 +3,7 @@ import { constants } from '../../utils/constants'
 import Button from '../button/button'
 import style from './footer.module.scss'
 import { navLinks as links } from '../../utils/nav-links'
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link as LinkDom } from 'react-router-dom'
 
 const Footer = () => {
   const { footer } = constants
@@ -17,8 +17,8 @@ const Footer = () => {
           <h2 className={style.title}>{footer.title}</h2>
           <p className={style.subtitle}>{footer.subtitle}</p>
           <div className={style.buttons}>
-            <Button icon={'telegram'} text={'Telegram'} />
-            <Button icon={'whatsapp'} text={'WhatsApp'} />
+            <Button icon={'telegram'} text={'Telegram'} href={'https://t.me/increasis_bot'} />
+            <Button icon={'whatsapp'} text={'WhatsApp'} href={'https://t.me/increasis_bot'} />
           </div>
         </div>
         <nav className={style.nav}>
@@ -39,9 +39,11 @@ const Footer = () => {
           </ul>
         </nav>
         <div className={style.group}>
-          <Button text={'Регистрация'} />
+
+          <Button text={'Регистрация'} href={'https://t.me/increasis_bot'} className={style.button} />
           <p className={style.privacy}>
-            <a href="#main" className={style.link}>Пользовательское соглашение</a>
+            <a href="./policy.pdf" className={style.link} target="_blank" rel="noopener noreferrer">Пользовательское соглашение</a> <br />
+            <a href="./privacy.pdf" className={style.link} target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
           </p>
         </div>
       </div>

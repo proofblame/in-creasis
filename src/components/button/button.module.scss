@@ -35,6 +35,8 @@ $secondHoverColor: #130d46;
 }
 
 .button {
+  box-sizing: border-box;
+  display: inline-block;
   background-color: $bgColor;
   border: none;
   color: $mainColor;

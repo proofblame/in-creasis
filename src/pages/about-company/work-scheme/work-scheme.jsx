@@ -1,6 +1,6 @@
 import Wrapper from '../../../components/wrapper/wrapper'
 import img from './images/work-scheme-img.svg'
-import imgCertificate from './images/sertificate.svg'
+import imgCertificate from './images/certificate.png'
 import { constants } from '../../../utils/constants'
 import style from './work-scheme.module.scss'
 

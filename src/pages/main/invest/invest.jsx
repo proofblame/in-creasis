@@ -26,7 +26,7 @@ const Invest = () => {
             <img src={img} alt={invest.title} className={style.img} />
           </div>
         </div>
-        <Button text={'Регистрация'} color={'dark'} />
+        <Button text={'Регистрация'} color={'dark'} href={'https://t.me/increasis_bot'} />
       </Wrapper>
     </section>
   )

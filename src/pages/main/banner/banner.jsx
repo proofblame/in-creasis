@@ -18,8 +18,8 @@ const Banner = () => {
               Инвестиции в NFT - выгодное предложение
             </p>
             <div className={style.buttons}>
-              <Button icon={'register'} text={'Регистрация'} />
-              <Button icon={'chat'} text={'Чат в телеграмм'} />
+              <Button icon={'register'} text={'Регистрация'} href={'https://t.me/increasis_bot'} />
+              <Button icon={'chat'} text={'Чат в телеграмм'} href={'https://t.me/increasis_bot'} />
             </div>
           </div>
           <div className={style.imgWrapper}>

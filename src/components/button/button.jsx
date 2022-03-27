@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import style from './button.module.scss'
 
-const Button = ({ text, icon, className, onClick, color, to }) => {
+const Button = ({ text, icon, className, onClick, color, to, href }) => {
 
   const iconClass = (icon) => {
     return style[`${icon}`]
@@ -31,7 +31,17 @@ const Button = ({ text, icon, className, onClick, color, to }) => {
         {text}
       </Link>
       :
-      <button className={classNames} onClick={onClick}>{text}</button>
+      href ?
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classNames}
+        >
+          {text}
+        </a>
+        :
+        <button className={classNames} onClick={onClick}>{text}</button>
   )
 }
 

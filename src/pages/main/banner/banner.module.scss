@@ -16,6 +16,7 @@
   flex-direction: column;
 }
 .container {
+  @include adaptive(padding-top, 200, 45);
   height: 100%;
   @extend %flex;
   align-items: center;

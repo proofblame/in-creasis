@@ -19,37 +19,37 @@ export const Tarifs = () => {
         </div>
         <div className={style.cards}>
           <Card
-            title={'Бомж'}
-            percent={'10%'}
+            title={'Первые шаги'}
+            percent={'1,5%'}
             img={bumImg}
             border={'border1'}
             btnClass={'card1'}
           >
             От 10$ <br />
-            до 2000$
+            до 1000$
           </Card>
           <Card
-            title={'Клерк'}
-            percent={'15%'}
+            title={'Инвестор'}
+            percent={'2%'}
             img={clerkImg}
             border={'border2'}
             btnClass={'card2'}
           >
-            От 2000$ <br />
-            до 5000$
+            От 1000$ <br />
+            до 2500$
           </Card>
           <Card
-            title={'Олигатор'}
-            percent={'10000%'}
+            title={'Мастер'}
+            percent={'2,5%'}
             img={alligatorImg}
             border={'border3'}
             btnClass={'card3'}
           >
-            От 5000$ <br />
-            до 5000000$
+            Более $2500
           </Card>
         </div>
       </Wrapper>
+
     </section>
   )
 }

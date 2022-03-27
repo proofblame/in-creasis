@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.b891f568.css",
-    "main.js": "/static/js/main.0be0a5fd.js",
+    "main.css": "/static/css/main.31768406.css",
+    "main.js": "/static/js/main.ed3350dd.js",
+    "static/media/certificate.png": "/static/media/certificate.a508b2fca1d7a423eff3.png",
     "static/media/work-scheme-img.svg": "/static/media/work-scheme-img.a27d00bd9a3062e523d6fb531fe9e5bf.svg",
     "static/media/roboto-400.ttf": "/static/media/roboto-400.a8d6ac03c7b96b7acb62.ttf",
     "static/media/candara-700.ttf": "/static/media/candara-700.7a50c78a85a168d6d7b8.ttf",
@@ -17,6 +18,7 @@
     "static/media/tarifs-bg.svg": "/static/media/tarifs-bg.6ff20b36a7ca07b60ddc.svg",
     "static/media/clerk-img.svg": "/static/media/clerk-img.45d134df8d849af50b531657b4e3797e.svg",
     "static/media/bum-img.svg": "/static/media/bum-img.77514b9e9d73808ae437ac87b5932287.svg",
+    "static/media/logo.svg": "/static/media/logo.bb029377d2afdb0ad7a1ab3c4cc3794c.svg",
     "static/media/about-nft-img.svg": "/static/media/about-nft-img.3d260c5151750890d20dafc1d00ea35f.svg",
     "index.html": "/index.html",
     "static/media/whatsapp-icon.svg": "/static/media/whatsapp-icon.6bbe18913bf23dd07cf0.svg",
@@ -42,12 +44,11 @@
     "static/media/banner-bg.svg": "/static/media/banner-bg.0436cf946e25803043e4.svg",
     "static/media/minus-icon.svg": "/static/media/minus-icon.207cd03360ff8b1f4fad.svg",
     "static/media/invest-bg.svg": "/static/media/invest-bg.968b62dea75ab6cc3d23.svg",
-    "static/media/sertificate.svg": "/static/media/sertificate.a4ab4cbb264555f2af04e7d2149b33b4.svg",
-    "main.b891f568.css.map": "/static/css/main.b891f568.css.map",
-    "main.0be0a5fd.js.map": "/static/js/main.0be0a5fd.js.map"
+    "main.31768406.css.map": "/static/css/main.31768406.css.map",
+    "main.ed3350dd.js.map": "/static/js/main.ed3350dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.b891f568.css",
-    "static/js/main.0be0a5fd.js"
+    "static/css/main.31768406.css",
+    "static/js/main.ed3350dd.js"
   ]
 }

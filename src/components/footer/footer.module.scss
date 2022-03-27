@@ -29,9 +29,10 @@
 }
 
 .button {
-  @media screen and (max-width: $_1024) {
-    display: none;
-  }
+  // @media screen and (max-width: $_1024) {
+  //   display: none;
+  // }
+  @include adaptive(margin-bottom, 18, 12);
 }
 
 .slogan {
@@ -76,5 +77,4 @@
   color: $linkColorActive;
 }
 .privacy {
-  @include adaptive(padding-top, 18, 12);
 }
