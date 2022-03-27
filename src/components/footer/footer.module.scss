@@ -12,7 +12,6 @@
 }
 
 .wrapper {
-  column-gap: 10px;
   // background-color: $background;
   @include adaptivePadding(padding, 22, 34, 17, 17);
   max-width: 1488px;
@@ -47,7 +46,12 @@
 .buttons {
   @extend %flex;
   justify-content: flex-start;
-  @include adaptive(column-gap, 20, 10);
+}
+.button {
+  @include adaptive(margin-right, 20, 10);
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 .list {
   @extend %fonts;
@@ -77,4 +81,7 @@
   color: $linkColorActive;
 }
 .privacy {
+}
+.nav {
+  margin-right: 10px;
 }

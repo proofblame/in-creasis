@@ -18,7 +18,6 @@
   align-items: center;
   @include adaptive(margin-bottom, 88, 40);
 
-  @include adaptive(column-gap, 84, 0);
   row-gap: 40px;
 
   @media screen and (max-width: $_768) {
@@ -27,6 +26,7 @@
 }
 .content {
   max-width: 717px;
+  @include adaptive(margin-right, 84, 0);
   @media screen and (max-width: $_768) {
     align-self: flex-end;
   }
@@ -56,4 +56,8 @@
 .img {
   width: 100%;
   display: block;
+}
+.img2 {
+  max-width: 768px;
+  margin: 0 auto;
 }

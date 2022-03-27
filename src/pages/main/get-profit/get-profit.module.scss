@@ -42,13 +42,14 @@
 .list {
   display: grid;
   grid-template-columns: repeat(2, minmax(286px, 1fr));
-  @include adaptive(column-gap, 60, 0);
+
   row-gap: 18px;
   @media screen and (max-width: $_768) {
     grid-template-columns: repeat(1, minmax(286px, 1fr));
   }
 }
 .item {
+  @include adaptive(margin-right, 60, 0);
   position: relative;
   @include adaptive(padding-left, 120, 48);
   &::before {

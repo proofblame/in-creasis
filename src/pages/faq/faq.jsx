@@ -7,7 +7,6 @@ import { CSSTransition } from "react-transition-group";
 
 export const Faq = () => {
   const nodeRef = useRef(null)
-  const [transition, setTransition] = useState(false)
   const [active, setActive] = useState({
     theme: 0,
     question: null
@@ -22,7 +21,6 @@ export const Faq = () => {
       theme: index,
       question: null
     })
-    setTransition(false)
   }
 
   const handleClickQuestion = (index) => {
@@ -31,14 +29,12 @@ export const Faq = () => {
         ...active,
         question: null
       })
-      setTransition(false)
     }
     else {
       setActive({
         ...active,
         question: index
       })
-      setTransition(true)
     }
   }
 

@@ -17,7 +17,6 @@ const StableSystem = () => {
               <li className={style.item}>{stableSystem.itemCaption1}</li>
               <li className={style.item}>{stableSystem.itemCaption2}</li>
               <li className={style.item}>{stableSystem.itemCaption3}</li>
-              <li className={style.item}>{stableSystem.itemCaption4}</li>
             </ul>
           </div>
           <div className={style.imgWrapper}>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.31768406.css",
-    "main.js": "/static/js/main.ed3350dd.js",
+    "main.css": "/static/css/main.21a6b1de.css",
+    "main.js": "/static/js/main.2acc823a.js",
     "static/media/certificate.png": "/static/media/certificate.a508b2fca1d7a423eff3.png",
     "static/media/work-scheme-img.svg": "/static/media/work-scheme-img.a27d00bd9a3062e523d6fb531fe9e5bf.svg",
     "static/media/roboto-400.ttf": "/static/media/roboto-400.a8d6ac03c7b96b7acb62.ttf",
@@ -19,7 +19,6 @@
     "static/media/clerk-img.svg": "/static/media/clerk-img.45d134df8d849af50b531657b4e3797e.svg",
     "static/media/bum-img.svg": "/static/media/bum-img.77514b9e9d73808ae437ac87b5932287.svg",
     "static/media/logo.svg": "/static/media/logo.bb029377d2afdb0ad7a1ab3c4cc3794c.svg",
-    "static/media/about-nft-img.svg": "/static/media/about-nft-img.3d260c5151750890d20dafc1d00ea35f.svg",
     "index.html": "/index.html",
     "static/media/whatsapp-icon.svg": "/static/media/whatsapp-icon.6bbe18913bf23dd07cf0.svg",
     "static/media/bitcoin-icon.svg": "/static/media/bitcoin-icon.835801364845f438aad7.svg",
@@ -44,11 +43,11 @@
     "static/media/banner-bg.svg": "/static/media/banner-bg.0436cf946e25803043e4.svg",
     "static/media/minus-icon.svg": "/static/media/minus-icon.207cd03360ff8b1f4fad.svg",
     "static/media/invest-bg.svg": "/static/media/invest-bg.968b62dea75ab6cc3d23.svg",
-    "main.31768406.css.map": "/static/css/main.31768406.css.map",
-    "main.ed3350dd.js.map": "/static/js/main.ed3350dd.js.map"
+    "main.21a6b1de.css.map": "/static/css/main.21a6b1de.css.map",
+    "main.2acc823a.js.map": "/static/js/main.2acc823a.js.map"
   },
   "entrypoints": [
-    "static/css/main.31768406.css",
-    "static/js/main.ed3350dd.js"
+    "static/css/main.21a6b1de.css",
+    "static/js/main.2acc823a.js"
   ]
 }

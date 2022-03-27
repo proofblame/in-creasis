@@ -16,7 +16,6 @@
   @extend %flex;
   flex-direction: row-reverse;
   align-items: center;
-  column-gap: 10px;
   row-gap: 40px;
   @media screen and (max-width: $_768) {
     flex-wrap: wrap;
@@ -42,10 +41,9 @@
   @extend %flex;
   flex-direction: column;
   align-items: flex-start;
-  @include adaptive(column-gap, 60, 0);
-  @include adaptive(row-gap, 18, 8);
 }
 .item {
+  @include adaptive(margin-bottom, 18, 8);
   position: relative;
   @include adaptive(padding-left, 33, 13);
   @extend %fz-24-12;
@@ -76,6 +74,7 @@
 }
 
 .imgWrapper {
+  @include adaptive(margin-right, 60, 0);
   @media screen and (max-width: $_768) {
     align-self: flex-start;
   }

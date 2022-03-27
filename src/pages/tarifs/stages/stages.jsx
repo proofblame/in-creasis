@@ -20,26 +20,26 @@ export const Stages = () => {
         </div>
         <div className={style.cards}>
           <StageCard
-            title={'Регистрируйся'}
+            title={'Регистрируйтесь'}
             img={registerImg}
             type={'reverse'}
           >
-            Создание, покупка и перепродажа NFT - буквально
+            Для этого необходимо сделать буквально несколько кликов
           </StageCard>
           <img src={arrow} alt={arrow} className={style.arrow} />
           <StageCard
-            title={'Вкладывай'}
+            title={'Вкладывайте'}
             img={investImg}
           >
-            Создание, покупка и перепродажа NFT - буквально
+            Минимальные вложения от 10$
           </StageCard>
           <img src={arrow} alt={arrow} className={style.reverseArrow} />
           <StageCard
-            title={'Зарабатывай'}
+            title={'Зарабатывайте'}
             img={profitImg}
             type={'reverse'}
           >
-            Создание, покупка и перепродажа NFT - буквально
+            Быстрый вывод средств на платёжные системы
           </StageCard>
         </div>
       </Wrapper>

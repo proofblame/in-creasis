@@ -6,12 +6,12 @@
   align-items: flex-start;
   letter-spacing: $letterSpacing;
   width: 100%;
+  @media screen and (max-width: $_768) {
+    flex-direction: column-reverse;
+  }
 }
 .reverse {
   flex-direction: column-reverse;
-  @media screen and (max-width: $_768) {
-    flex-direction: column;
-  }
 }
 .title {
   color: $mainColor;
@@ -19,11 +19,12 @@
   @include adaptive(margin-bottom, 20, 10);
 }
 .img {
-  @include adaptive(margin-bottom, 34, 0);
+  @include adaptive(margin-bottom, 34, 29);
   max-width: 455px;
 }
 .caption {
   color: $secondColor;
   @extend %fz-24-12;
   @include adaptive(margin-bottom, 33, 30);
+  // @include adaptive(width, 265, 183);
 }

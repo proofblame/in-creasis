@@ -13,7 +13,6 @@
 .wrapper {
   @extend %flex;
   row-gap: 20px;
-  column-gap: 10px;
 
   @media screen and (max-width: $_1024) {
     flex-wrap: wrap;
@@ -29,18 +28,18 @@
   grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
   justify-content: end;
   @include adaptive(column-gap, 20, 10);
-  @include adaptive(row-gap, 20, 10);
+
   @media screen and (max-width: $_576) {
     grid-template-columns: repeat(2, minmax(124px, 1fr));
   }
 }
 .item {
+  @include adaptive(margin-bottom, 20, 10);
+  width: 100%;
   box-sizing: border-box;
-  display: flex;
-  flex: 1 0 100%;
+  position: relative;
   align-items: center;
   justify-content: center;
-  @include adaptive(column-gap, 10, 6);
   text-align: center;
   background: #342a85;
   @include adaptivePadding(padding, 20, 22, 10, 12);
@@ -50,12 +49,11 @@
     justify-content: space-around;
   }
   &::before {
-    flex: 0 0 auto;
     content: '';
-    position: relative;
-    width: 30px;
-    height: 30px;
-    left: 0;
+    position: absolute;
+    @include adaptive(width, 30, 20);
+    @include adaptive(height, 30, 20);
+    @include adaptive(left, 20, 12);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

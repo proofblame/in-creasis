@@ -1,5 +1,4 @@
 import Wrapper from '../../../components/wrapper/wrapper'
-import img from './images/about-nft-img.svg'
 import { constants } from '../../../utils/constants'
 import style from './about-nft.module.scss'
 
@@ -14,7 +13,7 @@ export const AboutNft = () => {
           </div>
           <div className={style.imgWrapper}>
             <h2 className={style.title}>{aboutNft.title}</h2>
-            <img src={img} alt={aboutNft.title} className={style.img} />
+            <p className={style.nft}>NFT</p>
           </div>
         </div>
       </Wrapper>

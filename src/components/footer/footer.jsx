@@ -3,7 +3,7 @@ import { constants } from '../../utils/constants'
 import Button from '../button/button'
 import style from './footer.module.scss'
 import { navLinks as links } from '../../utils/nav-links'
-import { useLocation, Link as LinkDom } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 const Footer = () => {
   const { footer } = constants
@@ -17,8 +17,8 @@ const Footer = () => {
           <h2 className={style.title}>{footer.title}</h2>
           <p className={style.subtitle}>{footer.subtitle}</p>
           <div className={style.buttons}>
-            <Button icon={'telegram'} text={'Telegram'} href={'https://t.me/increasis_bot'} />
-            <Button icon={'whatsapp'} text={'WhatsApp'} href={'https://t.me/increasis_bot'} />
+            <Button icon={'telegram'} text={'Telegram'} href={'https://t.me/increasis_bot'} className={style.button} />
+            <Button icon={'whatsapp'} text={'WhatsApp'} href={'https://t.me/increasis_bot'} className={style.button} />
           </div>
         </div>
         <nav className={style.nav}>
