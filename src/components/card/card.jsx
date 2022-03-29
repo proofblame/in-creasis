@@ -1,7 +1,7 @@
 import Button from '../button/button'
 import style from './card.module.scss'
 
-const Card = ({ title, percent, img, border, btnClass, children }) => {
+const Card = ({ title, percent, img, border, btnClass, children, href }) => {
   const borderClass = (border) => {
     return style[`${border}`]
     // border1
@@ -17,7 +17,7 @@ const Card = ({ title, percent, img, border, btnClass, children }) => {
       <p className={style.subtitle}>{percent}</p>
       <img src={img} alt={title} className={style.img} />
       <p className={style.caption}>{children}</p>
-      <Button text={'Регистрация'} className={btnClass} />
+      <Button text={'Регистрация'} className={btnClass} href={href} />
     </section>
   )
 }

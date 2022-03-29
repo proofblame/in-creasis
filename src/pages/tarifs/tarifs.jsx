@@ -23,6 +23,7 @@ export const Tarifs = () => {
             percent={'1,5%'}
             img={bumImg}
             btnClass={'card1'}
+            href={'https://t.me/increasis_nft_bot'}
           >
             От 10$ <br />
             до 1000$
@@ -32,6 +33,7 @@ export const Tarifs = () => {
             percent={'2%'}
             img={clerkImg}
             btnClass={'card2'}
+            href={'https://t.me/increasis_nft_bot'}
           >
             От 1000$ <br />
             до 2500$
@@ -41,6 +43,7 @@ export const Tarifs = () => {
             percent={'2,5%'}
             img={alligatorImg}
             btnClass={'card3'}
+            href={'https://t.me/increasis_nft_bot'}
           >
             Более $2500
           </Card>
