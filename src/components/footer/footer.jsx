@@ -17,8 +17,7 @@ const Footer = () => {
           <h2 className={style.title}>{footer.title}</h2>
           <p className={style.subtitle}>{footer.subtitle}</p>
           <div className={style.buttons}>
-            <Button icon={'telegram'} text={'Telegram'} href={'https://t.me/increasis_bot'} className={style.button} />
-            <Button icon={'whatsapp'} text={'WhatsApp'} href={'https://t.me/increasis_bot'} className={style.button} />
+            <Button icon={'telegram'} text={'Telegram'} href={'https://t.me/increasis_manager'} className={style.button} />
           </div>
         </div>
         <nav className={style.nav}>
@@ -40,7 +39,7 @@ const Footer = () => {
         </nav>
         <div className={style.group}>
 
-          <Button text={'Регистрация'} href={'https://t.me/increasis_bot'} className={style.button} />
+          <Button text={'Регистрация'} href={' https://t.me/increasis_nft_bot'} className={style.button} />
           <p className={style.privacy}>
             <a href="./policy.pdf" className={style.link} target="_blank" rel="noopener noreferrer">Пользовательское соглашение</a> <br />
             <a href="./privacy.pdf" className={style.link} target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>

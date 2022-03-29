@@ -12,7 +12,7 @@ export const faqList = [
       },
       {
         title: 'Где найти Telegram-бота?',
-        answer: `Вы можете найти его по ссылке  https://t.me/increasis_bot или перейти по ней при регистрации`
+        answer: `Вы можете найти его по ссылке   https://t.me/increasis_nft_bot или перейти по ней при регистрации`
       },
     ]
   },

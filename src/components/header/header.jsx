@@ -14,7 +14,7 @@ const Header = () => {
       <div className={style.wrapper}>
         <Logo />
         <Nav />
-        <Button text={'Регистрация'} className={style.button} href={'https://t.me/increasis_bot'} />
+        <Button text={'Регистрация'} className={style.button} href={' https://t.me/increasis_nft_bot'} />
         <MenuButton />
       </div>
     </header>
